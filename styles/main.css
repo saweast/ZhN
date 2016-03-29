@@ -8,12 +8,15 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-ul, figure, p, h1, h2 {
+ul, figure, p, h1, h2, dl {
 	margin: 0;
 	padding: 0;
 }
 li {
 	list-style: none;
+}
+input, button {
+	outline: none;
 }
 body {
 	font-size: 13px;
