@@ -1,0 +1,37 @@
+.famousPeople {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #dce9ff;
+}
+.famousPeople section {
+	float: left;
+	width: 272px;
+
+}
+.famousPeople img {
+	width: 90px;
+	max-height: 89px;
+	float: left;
+	margin-right: 7px;
+}
+.famousPeople h2 {
+	font-size: 1em;
+	margin-bottom: 9px;
+	color: #27438f;
+}
+.famousPeople p {
+	font-size: .9em;
+	font-family: 'Noto sans', sans-serif;
+	margin-bottom: 9px;
+	color: #222222;
+}
+.famousPeople a.famousPeopleGo {
+	padding: 5px;
+	background: linear-gradient(#677fbe, #2b4791);
+	text-transform: uppercase;
+	color: #fff;
+}
+.famousPeople a.famousPeopleGo:hover {
+	text-decoration: none;
+	background: linear-gradient(#e75957, #c31b20);
+}
