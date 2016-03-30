@@ -1,0 +1,144 @@
+.content {
+	width: 100%;
+	position: relative;
+}
+.zhitomirToday {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	margin-top: 17px;
+}
+.zhitomirToday .zhitomirToday-item {
+	margin-bottom: 20px;
+	display: block;
+}
+.zhitomirToday > div {
+	border-bottom: 1px solid #dce9ff;
+	margin-bottom: 20px;
+}
+.zhitomirToday h2 {
+	padding: 12px 15px 12px 15px;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: "Noto sans", sans-serif;
+    display: inline-block;
+    background: linear-gradient(#eef4ff, #dce9ff);
+    color: #2954a7;
+}
+.zhitomirToday time {
+	margin-left: 15px;
+	color: #999999;
+	float: left;
+	margin-right: 20px;	
+	width: 30px;
+    text-align: center;
+}
+.zhitomirToday a:hover {
+	color: inherit;
+}
+.zhitomirToday .zhitomirToday-wrapContent {
+	width: 280px;
+	float: right;
+}
+.zhitomirToday p > a {
+	color: #222222;
+	font-family: "Noto sans", sans-serif;
+	    font-size: 1.077em;
+} 
+.zhitomirToday .zhitomirToday-magazine::before {
+	content: "";
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	background-color: #7388bf;
+	    margin-left: 5px;
+    margin-right: 5px;
+    top: -2px;
+}
+.zhitomirToday .zhitomirToday-magazine {
+	color: #7388bf;
+	position: relative;
+	font-family: "Scada", sans-serif;
+}
+.zhitomirToday .zhitomirToday-magazine:hover {
+	color: #7388bf;
+}
+.zhitomirToday .olderNews {
+	margin-top: -15px;
+}
+.zhitomirToday .olderNews h3 {
+	color: #999999;
+	font-weight: 400;
+	margin-left: 15px;
+	width: 30px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-size: 1em;
+} 
+.zhitomirToday .olderNews h3::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	height: 1px;
+	width: 280px;
+	background-color: #b9c3df;
+	width: 280px;
+    top: 7px;
+    left: 58px;
+}
+.zhitomirToday-pages {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	border-top: 1px solid #dce9ff;
+	border-bottom: 1px solid #dce9ff;
+}
+.zhitomirToday-pages ul {
+	display: inline-block;
+}
+.zhitomirToday-pages span {
+	font-weight: 700;
+	font-family: "Noto sans", sans-serif;
+	position: relative;
+	top: -5px;
+}
+.zhitomirToday-pages li {
+	font-family: "Noto sans", sans-serif;
+	display: table-cell;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	width: 20px;
+	color: #b0b0b0;
+}
+.zhitomirToday-pages li a:hover {
+	color: #d62424;
+	text-decoration: none;
+}
+.zhitomirToday-pages .activePage {
+	background: linear-gradient(#677fbe, #2b4691);
+	color: white;
+}
+.mainSlider {
+	height: 470px;
+	width: 66%;
+	border: 1px solid blue;
+	float: right;
+	margin-bottom: 30px;
+}
+.todayWord {
+	margin-right: 2%;
+	width: 32%;
+	height: 440px;
+	float: left;
+	border: 1px solid yellow;
+}
+.blogs {
+	width: 32%;
+	height: 440px;
+	float: left;
+	border: 1px solid green;
+}

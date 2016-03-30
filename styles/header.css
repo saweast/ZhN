@@ -89,6 +89,7 @@
     background-color: #eff5ff;
 }
 
+
 .mainNav li:last-child::after {
     display: none;
 }
@@ -214,7 +215,9 @@
     vertical-align: middle;
     background: linear-gradient(#677fbe, #2a4691);
 }
-
+.siteNav li:nth-child(9) {
+    width: calc(100% / 11 + 9px);
+}
 .siteNav li a {
     font-weight: 700;
     display: table-cell;
