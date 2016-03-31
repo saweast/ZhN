@@ -132,13 +132,62 @@
 .todayWord {
 	margin-right: 2%;
 	width: 32%;
-	height: 440px;
 	float: left;
-	border: 1px solid yellow;
+	background-color: #f4f8ff;
 }
 .blogs {
 	width: 32%;
 	height: 440px;
 	float: left;
 	border: 1px solid green;
+}
+
+.blockHeader {
+	padding: 12px 15px 12px 15px;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: "Noto sans", sans-serif;
+    display: inline-block;
+    background: linear-gradient(#eef4ff, #dce9ff);
+    color: #2954a7;
+}
+.blockNext {
+    float: right;
+    color: #2954a7;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+.todayWord h3 {
+	margin: 15px;
+	font-size: 1.4em;
+	color: #2954a7;
+}
+.todayWord figure {
+	float: left;
+	margin: 0 15px 15px 15px;
+
+}
+.todayWord figcaption {
+	margin-top: 10px;
+	font-weight: 700;
+	font-size: 1.1em;
+	color: #2954a7;
+}
+.todayWord figcaption a {
+	position: relative;
+	top: -3px;
+}
+.todayWord figcaption::before {
+	content: "";
+	display: inline-block;
+	position: relative;
+	margin-right: 7px;
+	float: left;
+	height: 29px;
+	width: 3px;
+	background-color: #d62424;
+}
+.todayWord p {
+	font-family: "Noto sans", sans-serif;
+	margin: 0 15px 15px 15px;
 }
