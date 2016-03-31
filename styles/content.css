@@ -137,9 +137,8 @@
 }
 .blogs {
 	width: 32%;
-	height: 440px;
 	float: left;
-	border: 1px solid green;
+	background-color: #f4f8ff;	
 }
 
 .blockHeader {
@@ -190,4 +189,40 @@
 .todayWord p {
 	font-family: "Noto sans", sans-serif;
 	margin: 0 15px 15px 15px;
+}
+.blogs li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-bottom: 1px solid #ffffff;
+}
+.blogs figure {
+
+}
+.blogs figcaption {
+	width: calc(100% - 75px);
+	display: inline-block;
+	float: right;
+}
+.blogs h3 {
+	color: #2954a7;
+}
+.blogs p {
+	font-family: "Noto sans", sans-serif;
+}
+.blogs time {
+	color: #999;
+}
+.blogImgWrapper {
+	border-radius: 50%;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	position: relative;
+	overflow: hidden;
+	margin-right: 12px;
+}
+.blogImgWrapper img {
+	width: 100%;
 }
