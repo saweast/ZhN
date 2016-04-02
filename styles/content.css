@@ -388,7 +388,7 @@
 .videoNewsSlider {
     float: right;	
     width: 66%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 15px;
     background-color: #f4f8ff;
 }
@@ -485,8 +485,9 @@
 }
 
 .interview {
-    float: left;
+    float: right;
     width: 32%;
+    margin-bottom: 24px;
     margin-right: 2%;
     position: relative;
 }
@@ -529,7 +530,7 @@
 }
 
 .focusOfTheWeek {
-    float: left;
+    float: right;
     width: 32%;
     background-color: #f4f8ff;
     margin-bottom: 17px;
@@ -543,4 +544,104 @@
 	float: left;
 	margin-right: 2%;
 	position: relative;
+	margin-bottom: 20px;
+}
+.afisha {
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	position: relative;
+	margin-bottom: 20px;
+}
+.afisha .main {
+	position: relative;
+}
+.afisha .main .afishaImgWrap {
+	position: relative;
+	height: 237px;
+	width: 100%;
+	overflow: hidden;
+}
+.afisha .main .afishaImgWrap a {
+	display: inline-block;
+	height: auto;
+}
+.afisha .main .afishaImgWrap img {
+	min-height: 237px;
+	width: 100%;
+}
+.afisha .main .afishaDesc h2 {
+	display: inline-block;
+	padding: 13px;
+	color: white;
+	background: linear-gradient(#e75957, #c31a1f);
+	font-size: 1em;
+    font-family: "Noto sans", sans-serif;
+    line-height: 1em;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+.afisha .main .afishaDesc time::before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	top: -10px;
+	width: 120px;
+	background-color: #d62424;
+}
+.afisha .main .afishaDesc time {
+	    position: absolute;
+    bottom: 16px;
+    font-size: 1.2em;
+    left: 16px;
+    font-weight: 700;
+    color: white;
+}
+.afisha .main .afishaDesc p {
+	font-size: 1.4em;
+	bottom: 60px;
+	position: absolute;
+	left: 16px;
+	font-weight: 700;
+	color: white;
+}
+.afisha .moreNews {
+	background-color: #f4f8ff;
+}
+.afisha .moreNews figure:last-child {
+	border-bottom: none;
+}
+.afisha .moreNews figure {
+	margin-left: 16px;
+	padding-top: 16px;
+	margin-right: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid white;
+}
+.afisha .moreNewsImgWrap {
+	position: relative;
+	float: left;
+	margin-right: 16px;
+	height: 60px;
+	width: 95px;
+	overflow: hidden;
+}
+.afisha .moreNewsImgWrap img {
+	width: 100%;
+	min-height: 60px;
+}
+.afisha .moreNews figcaption {
+	float: left;
+    width: calc(100% - 111px);
+}
+.afisha .moreNews p {
+	color: #2954a7;
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-bottom: 7px;
+}
+.afisha .moreNews time {
+	color: #d62424;
 }
