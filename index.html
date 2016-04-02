@@ -33,26 +33,7 @@
         });
 
     });
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        items:3,
-        loop:true,  
-        margin:10,
-        nav: true,
-      });
-      $(".owl-carousel-photo").owlCarousel({
-        items:3,
-        loop:true,  
-        margin:10,
-        nav: true,
-      });
-      $(".owl-carousel-interview").owlCarousel({
-        items:1,
-        loop:true,  
-        nav: true,
-      });
-
-    });
+    
     </script>
     <script src="scripts/jquery.easing.js"></script>
     <script src="scripts/jquery.mousewheel.js"></script>
@@ -496,16 +477,27 @@
 
                 </div>
                 <div class="interview">
+                    <h2 class="blockHeader"><a href="#" title="">ІНТЕРВ’Ю</a></h2>
                     <div class="owl-carousel-interview">
-                        <div>Интервью 1</div>
-                        <div>Интервью 2</div>
-                        <div>Интервью 3</div>
-                        <div>Интервью 4</div>
-                        <div>Интервью 5</div>
+                        <div>
+                            <div class="interviewImgWrapper">
+                                <a href="#" title="">
+                                    <img src="images/interview.png" alt="">  
+                                </a>
+                            </div>  
+                            <p><a href="#" title="">Житомир, Рустам Раупов: «Не можу і не буду стояти осторонь»</a></p>
+                        </div><div>
+                            <div class="interviewImgWrapper">
+                                <a href="#" title="">
+                                    <img src="images/interview.png" alt="">  
+                                </a>
+                            </div>  
+                            <p><a href="#" title="">Житомир, Рустам Раупов: «Не можу і не буду стояти осторонь»</a></p>
+                        </div>
                     </div>
                 </div>
                 <div class="focusOfTheWeek">
-                    <h2 class="blockHeader">Акценти тижня</h2>
+                    <h2 class="blockHeader"><a href="#" title="">Акценти тижня</a></h2>
                     <a href="#" class="blockNext">Більше →</a>
                     <ul class="clear">
                         <li>
@@ -607,6 +599,28 @@
     </div>
     <!-- <script defer src="scripts/demo.js"></script> -->
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items:3,
+        loop:true,  
+        margin:10,
+        nav: true,
+      });
+      $(".owl-carousel-photo").owlCarousel({
+        items:3,
+        loop:true,  
+        margin:10,
+        nav: true,
+      });
+      $(".owl-carousel-interview").owlCarousel({
+        items:1,
+        loop:true,  
+        nav: true,
+      });
+
+    });
+    </script>
 </body>
 
 </html>
