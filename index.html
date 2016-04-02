@@ -6,14 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Головна</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    
     <link rel="stylesheet" href="styles/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/owl.carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/mainAside.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/content.css">
+
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Scada:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+    <script defer src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+
+    });
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items:3,
+        loop:true,  
+        margin:10,
+        nav: true,
+      });
+      $(".owl-carousel-photo").owlCarousel({
+        items:3,
+        loop:true,  
+        margin:10,
+        nav: true,
+      });
+      $(".owl-carousel-interview").owlCarousel({
+        items:1,
+        loop:true,  
+        nav: true,
+      });
+
+    });
+    </script>
+    <script src="scripts/jquery.easing.js"></script>
+    <script src="scripts/jquery.mousewheel.js"></script>
+
 </head>
 
 <body>
@@ -417,29 +460,152 @@
                     </ul>
                 </div>
                 <div class="videoNewsSlider">
+                    <h2><a href="#" title="">ВІДЕОNEWS</a></h2>
+                    <div class="owl-carousel">
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/1.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/2.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/3.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/4.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/2.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/5.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                    </div>
+
+                </div>
+                <div class="interview">
+                    <div class="owl-carousel-interview">
+                        <div>Интервью 1</div>
+                        <div>Интервью 2</div>
+                        <div>Интервью 3</div>
+                        <div>Интервью 4</div>
+                        <div>Интервью 5</div>
+                    </div>
+                </div>
+                <div class="focusOfTheWeek">
+                    <h2 class="blockHeader">Акценти тижня</h2>
+                    <a href="#" class="blockNext">Більше →</a>
+                    <ul class="clear">
+                        <li>
+                            <figure>
+                                <div class="blogImgWrapper">
+                                    <a href="#" title="">
+                                        <img src="images/tGarmashenko.png" alt="">
+                                    </a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#" title="">Анастасія Гармаш:</a></h3>
+                                    <p><a href="#" title="">Янукович взявся призначати суддів на Житомирщині</a></p>
+                                    <time datetime=""><a href="#" title="">11 вересня 09:35</a></time>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="blogImgWrapper">
+                                    <a href="#" title="">
+                                        <img src="images/tGarmashenko.png" alt="">
+                                    </a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#" title="">Анастасія Гармаш:</a></h3>
+                                    <p><a href="#" title="">Янукович взявся призначати суддів на Житомирщині</a></p>
+                                    <time datetime=""><a href="#" title="">11 вересня 09:35</a></time>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="blogImgWrapper">
+                                    <a href="#" title="">
+                                        <img src="images/tGarmashenko.png" alt="">
+                                    </a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#" title="">Анастасія Гармаш:</a></h3>
+                                    <p><a href="#" title="">Янукович взявся призначати суддів на Житомирщині</a></p>
+                                    <time datetime=""><a href="#" title="">11 вересня 09:35</a></time>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="blogImgWrapper">
+                                    <a href="#" title="">
+                                        <img src="images/tGarmashenko.png" alt="">
+                                    </a>
+                                </div>
+                                <figcaption>
+                                    <h3><a href="#" title="">Анастасія Гармаш:</a></h3>
+                                    <p><a href="#" title="">Янукович взявся призначати суддів на Житомирщині</a></p>
+                                    <time datetime=""><a href="#" title="">11 вересня 09:35</a></time>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="photoNewsSlider">
+                    <h2><a href="#" title="">ФОТОNEWS</a></h2>
+                    <div class="owl-carousel-photo">
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/1.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/2.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/3.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/4.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/2.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                      <div>
+                        <a href="#" title="" class="imgWrap"><img src="images/slider/5.jpg" alt=""></a>
+                        <p class="videoCaption"><a href="#" title="">Народний контроль перевірить обіцянки луцьких комунальників</a></p>
+                        <p class="videoDesc"><a href="#" title="">Народний контроль</a><a href="#" title=""><time>11 вересня 09:35</time></a></p> 
+                      </div>
+                    </div>
+
                 </div>
             </section>
         </section>
     </div>
-    <script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
-    <script defer src="scripts/jquery.flexslider.js"></script>
-    <script type="text/javascript">
-    $(function() {
-        // SyntaxHighlighter.all();
-    })
-    $(window).load(function() {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: "thumbnails",
-            start: function(slider) {
-                $('body').removeClass('loading');
-            }
-        });
-    });
-    </script>
-    <script src="scripts/jquery.easing.js"></script>
-    <script src="scripts/jquery.mousewheel.js"></script>
-    <script defer src="scripts/demo.js"></script>
+    <!-- <script defer src="scripts/demo.js"></script> -->
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 

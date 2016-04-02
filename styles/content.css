@@ -1,333 +1,501 @@
 .content {
-	width: 100%;
-	position: relative;
+    position: relative;
+    width: 100%;
 }
+
 .zhitomirToday {
-	width: 32%;
-	float: left;
-	margin-right: 2%;
-	margin-top: 17px;
+    float: left;
+    width: 32%;
+    margin-top: 17px;
+    margin-right: 2%;
 }
+
 .zhitomirToday .zhitomirToday-item {
-	margin-bottom: 20px;
-	display: block;
+    display: block;
+    margin-bottom: 20px;
 }
+
 .zhitomirToday > div {
-	border-bottom: 1px solid #dce9ff;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dce9ff;
 }
+
 .zhitomirToday h2 {
-	padding: 12px 15px 12px 15px;
+    font-family: 'Noto sans', sans-serif;
     font-size: 1em;
     line-height: 1em;
-    font-family: "Noto sans", sans-serif;
     display: inline-block;
+    padding: 12px 15px 12px 15px;
+    color: #2954a7;
     background: linear-gradient(#eef4ff, #dce9ff);
+}
+
+.zhitomirToday time {
+    float: left;
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 15px;
+    text-align: center;
+    color: #999;
+}
+
+.zhitomirToday a:hover {
+    color: inherit;
+}
+
+.zhitomirToday .zhitomirToday-wrapContent {
+    float: right;
+    width: 280px;
+}
+
+.zhitomirToday p > a {
+    font-family: 'Noto sans', sans-serif;
+    font-size: 1.077em;
+    color: #222;
+}
+
+.zhitomirToday .zhitomirToday-magazine::before {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    content: '';
+    border-radius: 50%;
+    background-color: #7388bf;
+}
+
+.zhitomirToday .zhitomirToday-magazine {
+    font-family: 'Scada', sans-serif;
+    position: relative;
+    color: #7388bf;
+}
+
+.zhitomirToday .zhitomirToday-magazine:hover {
+    color: #7388bf;
+}
+
+.zhitomirToday .olderNews {
+    margin-top: -15px;
+}
+
+.zhitomirToday .olderNews h3 {
+    font-size: 1em;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    margin-left: 15px;
+    text-align: center;
+    color: #999;
+}
+
+.zhitomirToday .olderNews h3::after {
+    position: absolute;
+    top: 7px;
+    left: 58px;
+    display: inline-block;
+    width: 280px;
+    width: 280px;
+    height: 1px;
+    content: '';
+    background-color: #b9c3df;
+}
+
+.zhitomirToday-pages {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-top: 1px solid #dce9ff;
+    border-bottom: 1px solid #dce9ff;
+}
+
+.zhitomirToday-pages ul {
+    display: inline-block;
+}
+
+.zhitomirToday-pages span {
+    font-family: 'Noto sans', sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: -5px;
+}
+
+.zhitomirToday-pages li {
+    font-family: 'Noto sans', sans-serif;
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: #b0b0b0;
+}
+
+.zhitomirToday-pages li a:hover {
+    text-decoration: none;
+    color: #d62424;
+}
+
+.zhitomirToday-pages .activePage {
+    color: white;
+    background: linear-gradient(#677fbe, #2b4691);
+}
+
+.mainSlider {
+    float: right;
+    width: 66%;
+    margin-bottom: 30px;
+}
+
+.flexslider {
+    margin-bottom: 0;
+    border: none;
+}
+
+.flex-control-nav.flex-control-thumbs li {
+    position: relative;
+    overflow: hidden;
+    height: 72px;
+}
+
+.flex-control-thumbs img {
+    position: relative;
+    bottom: 24px;
+    padding-bottom: 3px;
+    transition-duration: .2s;
+    border-bottom: 3px solid transparent;
+}
+
+.flex-control-thumbs img.flex-active {
+    position: relative;
+    bottom: 24px;
+    border-bottom: 3px solid #d62424;
+}
+
+.flexslider .slides li {
+    position: relative;
+    height: 380px;
+}
+
+.flexslider .sliderImageWrapper {
+    position: relative;
+    overflow: hidden;
+    height: 380px;
+}
+
+.flexslider ul img {
+    position: relative;
+    top: -15%;
+    width: 100%;
+}
+
+.flexslider h3 {
+    font-family: 'Noto sans', sans-serif;
+    font-size: 1.4em;
+    line-height: 1em;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: inline-block;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(#e75957, #c31a1f);
+}
+
+.flexslider time {
+    font-size: 1.4em;
+    line-height: 1em;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    color: #666;
+    background: linear-gradient(#fff, #ededed);
+}
+
+.flexslider .author {
+    font-family: 'Noto-sans', sans-serif;
+    font-size: 1.4em;
+    font-style: italic;
+    position: absolute;
+    bottom: 16px;
+    left: 30px;
+    color: #f6f6f6;
+}
+
+.flexslider .author::before {
+    position: absolute;
+    left: -15px;
+    width: 3px;
+    height: 18px;
+    content: '';
+    background: #d62424;
+}
+
+.flexslider p {
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+    bottom: 55px;
+    display: inline-block;
+    margin-right: 30px;
+    padding: 20px 0 20px 30px;
+    color: #fff;
+    background-image: url('../images/sliderTextBackground.png');
+    background-size: 100%;
+}
+
+.flex-control-thumbs li {
+    width: 18.4%;
+    margin-top: 10px;
+    margin-right: 2%;
+}
+
+.flex-control-thumbs li:last-child {
+    margin-right: 0;
+}
+
+.todayWord {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 17px;
+    background-color: #f4f8ff;
+}
+
+.blogs {
+    float: left;
+    width: 32%;
+    min-height: 450px;
+    margin-bottom: 17px;
+    background-color: #f4f8ff;
+}
+
+.blockHeader {
+    font-family: 'Noto sans', sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    display: inline-block;
+    padding: 12px 15px 12px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(#677fbe, #2a4691);
+}
+
+.blockNext {
+    float: right;
+    margin-top: 12px;
+    margin-right: 20px;
     color: #2954a7;
 }
-.zhitomirToday time {
-	margin-left: 15px;
+
+.todayWord h3 {
+    font-size: 1.4em;
+    margin: 15px;
+    color: #2954a7;
+}
+
+.todayWord figure {
+    float: left;
+    margin: 0 15px 15px 15px;
+}
+
+.todayWord figure img {
+    width: 135px;
+}
+
+.todayWord figcaption {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #2954a7;
+}
+
+.todayWord figcaption a {
+    position: relative;
+    top: -3px;
+}
+
+.todayWord figcaption::before {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 3px;
+    height: 29px;
+    margin-right: 7px;
+    content: '';
+    background-color: #d62424;
+}
+
+.todayWord p {
+    font-family: 'Noto sans', sans-serif;
+    margin: 0 15px 15px 15px;
+}
+
+.focusOfTheWeek li,
+.blogs li {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+.focusOfTheWeek figcaption,
+.blogs figcaption {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 75px);
+}
+
+.focusOfTheWeek h3,
+.blogs h3 {
+    color: #2954a7;
+}
+
+.focusOfTheWeek p,
+.blogs p {
+    font-family: 'Noto sans', sans-serif;
+}
+
+.focusOfTheWeek time,
+.blogs time {
+    color: #999;
+}
+
+.blogImgWrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.blogImgWrapper img {
+    width: 100%;
+}
+.photoNewsSlider,
+.videoNewsSlider {
+    float: right;	
+    width: 66%;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f4f8ff;
+}
+.photoNewsSlider h2,
+.videoNewsSlider h2 {
+	color: #2954a7;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+.photoNewsSlider h2::before,
+.videoNewsSlider h2::before {
+	display: inline-block;
+	content: "";
+	position: relative;
+	width: 26px;
+	height: 20px;
+	background-image: url('../images/video.png');
+	background-size: 100% 100%;
+	margin-right: 7px;
+}
+.photoNewsSlider h2::before {
+	background-image: url('../images/photo.png');
+}
+.photoNewsSlider .videoCaption,
+.videoNewsSlider .videoCaption {
+	font-weight: bold;
+	color: #2954a7;
+	font-size: 1.2em;
+	margin-bottom: 14px;
+	margin-top: 7px;
+}
+.photoNewsSlider .videoDesc,
+.videoNewsSlider .videoDesc {
 	color: #999999;
-	float: left;
-	margin-right: 20px;	
-	width: 30px;
-    text-align: center;
+
 }
-.zhitomirToday a:hover {
-	color: inherit;
+.videoNewsSlider .imgWrap {
+	position: relative;
+
 }
-.zhitomirToday .zhitomirToday-wrapContent {
-	width: 280px;
-	float: right;
-}
-.zhitomirToday p > a {
-	color: #222222;
-	font-family: "Noto sans", sans-serif;
-	    font-size: 1.077em;
+
+.videoNewsSlider .imgWrap::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 31px;
+	height: 35px;
+	background-size: 100% 100%;
+	top: 38%;
+	left: 44%;
+	background-image: url("../images/videoPlay.png");
 } 
-.zhitomirToday .zhitomirToday-magazine::before {
+
+.imgWrap {
+	display: inline-block;
+	height: auto;
+}
+
+.photoNewsSlider time::before,
+.videoNewsSlider time::before {
 	content: "";
 	height: 5px;
 	width: 5px;
 	border-radius: 50%;
-	position: relative;
-	display: inline-block;
-	background-color: #7388bf;
-	    margin-left: 5px;
-    margin-right: 5px;
-    top: -2px;
-}
-.zhitomirToday .zhitomirToday-magazine {
-	color: #7388bf;
-	position: relative;
-	font-family: "Scada", sans-serif;
-}
-.zhitomirToday .zhitomirToday-magazine:hover {
-	color: #7388bf;
-}
-.zhitomirToday .olderNews {
-	margin-top: -15px;
-}
-.zhitomirToday .olderNews h3 {
-	color: #999999;
-	font-weight: 400;
-	margin-left: 15px;
-	width: 30px;
 	display: inline-block;
 	position: relative;
-	text-align: center;
-	font-size: 1em;
-} 
-.zhitomirToday .olderNews h3::after {
-	content: "";
+	top: -2px;
+	margin-right: 3px;
+	margin-left: 3px;
+	background-color: #999999;
+}
+.photoNewsSlider .owl-prev,
+.videoNewsSlider .owl-prev {
 	display: inline-block;
-	position: absolute;
-	height: 1px;
-	width: 280px;
-	background-color: #b9c3df;
-	width: 280px;
-    top: 7px;
-    left: 58px;
+	font-size: 0;
+	width: 17px;
+	height: 27px;
+	background-image: url("../images/sliderPrev.png");
+	    position: absolute;
+    top: 60px;
+    left: 10px;
 }
-.zhitomirToday-pages {
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 8px;
-	border-top: 1px solid #dce9ff;
-	border-bottom: 1px solid #dce9ff;
-}
-.zhitomirToday-pages ul {
+.photoNewsSlider .owl-next,
+.videoNewsSlider .owl-next {
 	display: inline-block;
-}
-.zhitomirToday-pages span {
-	font-weight: 700;
-	font-family: "Noto sans", sans-serif;
-	position: relative;
-	top: -5px;
-}
-.zhitomirToday-pages li {
-	font-family: "Noto sans", sans-serif;
-	display: table-cell;
-	height: 20px;
-	text-align: center;
-	vertical-align: middle;
-	width: 20px;
-	color: #b0b0b0;
-}
-.zhitomirToday-pages li a:hover {
-	color: #d62424;
-	text-decoration: none;
-}
-.zhitomirToday-pages .activePage {
-	background: linear-gradient(#677fbe, #2b4691);
-	color: white;
-}
-.mainSlider {
-	width: 66%;
-	float: right;
-	margin-bottom: 30px;
+	font-size: 0;
+	width: 17px;
+	height: 27px;
+	background-image: url("../images/sliderNext.png");
+	    position: absolute;
+    top: 60px;
+    right: 10px;
 }
 
-.flexslider {
-	border: none;
-	margin-bottom: 0;
-}
-.flex-control-nav.flex-control-thumbs li {
-	position: relative;
-	height: 72px;
-    overflow: hidden;
-}
-.flex-control-thumbs img {
-	padding-bottom: 3px;
-	border-bottom: 3px solid transparent;
-	transition-duration: .2s;
-	position: relative;
-    bottom: 24px;
-}
-.flex-control-thumbs img.flex-active {
-	
-	border-bottom: 3px solid #d62424;
-	position: relative;
-    bottom: 24px;
-}
-.flex-control-thumbs img {
-	
-}
-.flexslider .slides li {
-	position: relative;
-	height: 380px;
-}
-.flexslider .sliderImageWrapper {
-	height: 380px;
-	overflow: hidden;
-	position: relative;
-}
-.flexslider ul img {
-	width: 100%;
-position: relative;
-    top: -15%;
-
-}
-.flexslider h3 {
-	    display: inline-block;
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    padding: 13px 15px;
-    text-transform: uppercase;
-    font-family: 'Noto sans', sans-serif;
-    background: linear-gradient(#e75957,#c31a1f);
-    font-size: 1.4em;
-    line-height: 1em;
-    color: white;
-}
-.flexslider time {
-	position: absolute;
-    right: 16px;
-    top: 16px;
-    font-size: 1.4em;
-    padding: 13px 15px;
-    line-height: 1em;
-    color: #666666;
-    background: linear-gradient(#fff,#ededed);
-    text-transform: uppercase;
-}
-.flexslider .author {
-	font-family: "Noto-sans", sans-serif;
-    bottom: 16px;
-    left: 30px;
-    font-size: 1.4em;
-    font-style: italic;
-    position: absolute;
-    color: #f6f6f6;
-}
-.flexslider .author::before {
-	content: "";
-	position: absolute;
-	left: -15px;
-	width: 3px;
-	height: 18px;
-	background: #d62424;
-}
-.flexslider p {
-	    display: inline-block;
-    bottom: 55px;
-    font-weight: 700;
-    padding: 20px 0 20px 30px;
-	margin-right: 30px;
-    color: #ffffff;
-    font-size: 2em;
-    background-size: 100%;
-	position: absolute;
-	background-image: url("../images/sliderTextBackground.png");
-}
-.flex-control-thumbs li {
-	width: 18.4%;
+.interview {
+    float: left;
+    width: 32%;
+    min-height: 450px;
     margin-right: 2%;
-    margin-top: 10px;
-}
-.flex-control-thumbs li:last-child {
-	margin-right: 0;
+    border: 1px solid red;
 }
 
-.todayWord {
-	margin-right: 2%;
-	width: 32%;
-	float: left;
-	background-color: #f4f8ff;
-}
-.blogs {
-	width: 32%;
-	float: left;
-	background-color: #f4f8ff;	
-	min-height: 450px;
-}
-
-.blockHeader {
-	padding: 12px 15px 12px 15px;
-    font-size: 1em;
-    line-height: 1em;
-    font-family: "Noto sans", sans-serif;
-    display: inline-block;
-    background: linear-gradient(#eef4ff, #dce9ff);
-    color: #2954a7;
-}
-.blockNext {
-    float: right;
-    color: #2954a7;
-    margin-right: 20px;
-    margin-top: 12px;
-}
-.todayWord h3 {
-	margin: 15px;
-	font-size: 1.4em;
-	color: #2954a7;
-}
-.todayWord figure {
-	float: left;
-	margin: 0 15px 15px 15px;
+.focusOfTheWeek {
+    float: left;
+    width: 32%;
+    min-height: 450px;
+    background-color: #f4f8ff;
+    margin-bottom: 17px;
 
 }
-.todayWord figure img {
-	width: 135px;
-}
-.todayWord figcaption {
-	margin-top: 10px;
-	font-weight: 700;
-	font-size: 1.1em;
-	color: #2954a7;
-}
-.todayWord figcaption a {
-	position: relative;
-	top: -3px;
-}
-.todayWord figcaption::before {
-	content: "";
-	display: inline-block;
-	position: relative;
-	margin-right: 7px;
-	float: left;
-	height: 29px;
-	width: 3px;
-	background-color: #d62424;
-}
-.todayWord p {
-	font-family: "Noto sans", sans-serif;
-	margin: 0 15px 15px 15px;
-}
-.blogs li {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-left: 15px;
-	margin-right: 15px;
-	border-bottom: 1px solid #ffffff;
-}
-.blogs figure {
-
-}
-.blogs figcaption {
-	width: calc(100% - 75px);
-	display: inline-block;
-	float: right;
-}
-.blogs h3 {
-	color: #2954a7;
-}
-.blogs p {
-	font-family: "Noto sans", sans-serif;
-}
-.blogs time {
-	color: #999;
-}
-.blogImgWrapper {
-	border-radius: 50%;
-	display: inline-block;
-	height: 60px;
-	width: 60px;
-	position: relative;
-	overflow: hidden;
-	margin-right: 12px;
-}
-.blogImgWrapper img {
-	width: 100%;
+.focusOfTheWeek .blogImgWrapper {
+	border-radius: 0;
 }
