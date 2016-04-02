@@ -7,6 +7,7 @@
     <title>Головна</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" href="styles/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="styles/mainAside.css">
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/content.css">
@@ -292,6 +293,56 @@
                     </div>
                 </div>
                 <div class="mainSlider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li data-thumb="images/slider/1.jpg">
+                                <div class="sliderImageWrapper">
+                                    <img src="images/slider/1.jpg"/>
+                                </div>
+                                <h3><a href="#" title="">News one</a></h3>
+                                <time datetime=""><a href="#" title="">Сьогодні 12:55</a></time>
+                                <p><a href="#">Децентралізація влади та її вплив на подальший економічний розвиток України</a></p>
+                                <span class="author"><a href="" title="">М. Саакашвілі</a></span>
+                            </li>
+                            <li data-thumb="images/slider/2.jpg">
+                                <div class="sliderImageWrapper">
+                                    <img src="images/slider/2.jpg"/>
+                                </div>
+                                <h3><a href="#" title="">News one</a></h3>
+                                <time datetime=""><a href="#" title="">Сьогодні 12:55</a></time>
+                                <p><a href="#">Децентралізація влади та її вплив на подальший економічний розвиток України</a></p>
+                                <span class="author"><a href="" title="">М. Саакашвілі</a></span>
+                            </li>
+                            <li data-thumb="images/slider/3.jpg">
+                                <div class="sliderImageWrapper">
+                                    <img src="images/slider/3.jpg"/>
+                                </div>
+                                <h3><a href="#" title="">News one</a></h3>
+                                <time datetime=""><a href="#" title="">Сьогодні 12:55</a></time>
+                                <p><a href="#">Децентралізація влади та її вплив на подальший економічний розвиток України</a></p>
+                                <span class="author"><a href="" title="">М. Саакашвілі</a></span>
+                            </li>
+                            <li data-thumb="images/slider/4.jpg">
+                                <div class="sliderImageWrapper">
+                                    <img src="images/slider/4.jpg"/>
+                                </div>
+                                <h3><a href="#" title="">News one</a></h3>
+                                <time datetime=""><a href="#" title="">Сьогодні 12:55</a></time>
+                                <p><a href="#">Децентралізація влади та її вплив на подальший економічний розвиток України</a></p>
+                                <span class="author"><a href="" title="">М. Саакашвілі</a></span>
+                            </li>
+                            <li data-thumb="images/slider/5.jpg">
+                                <div class="sliderImageWrapper">
+                                    <img src="images/slider/5.jpg"/>
+                                </div>
+                                <h3><a href="#" title="">News one</a></h3>
+                                <time datetime=""><a href="#" title="">Сьогодні 12:55</a></time>
+                                <p><a href="#">Децентралізація влади та її вплив на подальший економічний розвиток України</a></p>
+                                <span class="author"><a href="" title="">М. Саакашвілі</a></span>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
                 <div class="todayWord">
                     <h2 class="blockHeader"><a href="#" title="">СЛОВО ГРОМАДІ</a></h2>
@@ -370,6 +421,26 @@
             </section>
         </section>
     </div>
+    <script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+    <script defer src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // SyntaxHighlighter.all();
+    })
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails",
+            start: function(slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+    </script>
+    <script src="scripts/jquery.easing.js"></script>
+    <script src="scripts/jquery.mousewheel.js"></script>
+    <script defer src="scripts/demo.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>

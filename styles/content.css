@@ -123,12 +123,106 @@
 	color: white;
 }
 .mainSlider {
-	height: 470px;
 	width: 66%;
-	border: 1px solid blue;
 	float: right;
 	margin-bottom: 30px;
 }
+
+.flexslider {
+	border: none;
+	margin-bottom: 0;
+}
+.flex-control-nav.flex-control-thumbs li {
+	position: relative;
+}
+.flex-control-thumbs img {
+	padding-bottom: 3px;
+	border-bottom: 3px solid transparent;
+}
+.flex-control-thumbs img.flex-active {
+	
+	border-bottom: 3px solid #d62424;
+}
+.flex-control-thumbs img {
+	transition-duration: .2s;
+}
+.flexslider .slides li {
+	position: relative;
+	height: 380px;
+}
+.flexslider .sliderImageWrapper {
+	height: 380px;
+	overflow: hidden;
+	position: relative;
+}
+.flexslider ul img {
+	width: 100%;
+position: relative;
+    top: -15%;
+
+}
+.flexslider h3 {
+	    display: inline-block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 13px 15px;
+    text-transform: uppercase;
+    font-family: 'Noto sans', sans-serif;
+    background: linear-gradient(#e75957,#c31a1f);
+    font-size: 1.4em;
+    line-height: 1em;
+    color: white;
+}
+.flexslider time {
+	position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 1.4em;
+    padding: 13px 15px;
+    line-height: 1em;
+    color: #666666;
+    background: linear-gradient(#fff,#ededed);
+    text-transform: uppercase;
+}
+.flexslider .author {
+	font-family: "Noto-sans", sans-serif;
+    bottom: 16px;
+    left: 30px;
+    font-size: 1.4em;
+    font-style: italic;
+    position: absolute;
+    color: #f6f6f6;
+}
+.flexslider .author::before {
+	content: "";
+	position: absolute;
+	left: -15px;
+	width: 3px;
+	height: 18px;
+	background: #d62424;
+}
+.flexslider p {
+	    display: inline-block;
+    bottom: 55px;
+    font-weight: 700;
+    padding: 20px 0 20px 30px;
+	margin-right: 30px;
+    color: #ffffff;
+    font-size: 2em;
+    background-size: 100%;
+	position: absolute;
+	background-image: url("../images/sliderTextBackground.png");
+}
+.flex-control-thumbs li {
+	width: 18.4%;
+    margin-right: 2%;
+    margin-top: 10px;
+}
+.flex-control-thumbs li:last-child {
+	margin-right: 0;
+}
+
 .todayWord {
 	margin-right: 2%;
 	width: 32%;
@@ -139,6 +233,7 @@
 	width: 32%;
 	float: left;
 	background-color: #f4f8ff;	
+	min-height: 450px;
 }
 
 .blockHeader {
@@ -165,6 +260,9 @@
 	float: left;
 	margin: 0 15px 15px 15px;
 
+}
+.todayWord figure img {
+	width: 135px;
 }
 .todayWord figcaption {
 	margin-top: 10px;
