@@ -134,17 +134,24 @@
 }
 .flex-control-nav.flex-control-thumbs li {
 	position: relative;
+	height: 72px;
+    overflow: hidden;
 }
 .flex-control-thumbs img {
 	padding-bottom: 3px;
 	border-bottom: 3px solid transparent;
+	transition-duration: .2s;
+	position: relative;
+    bottom: 24px;
 }
 .flex-control-thumbs img.flex-active {
 	
 	border-bottom: 3px solid #d62424;
+	position: relative;
+    bottom: 24px;
 }
 .flex-control-thumbs img {
-	transition-duration: .2s;
+	
 }
 .flexslider .slides li {
 	position: relative;
