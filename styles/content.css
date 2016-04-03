@@ -763,57 +763,160 @@
 }
 
 .social {
+    position: relative;
     display: inline-block;
     float: right;
+    overflow: hidden;
     width: 32%;
     min-height: 200px;
-    border: 1px solid red;
-	position: relative;
-	background-color: #f4f8ff;
+    background-color: #f4f8ff;
 }
+
 .social form {
-	padding: 16px;
-	font-family: "Noto sans", sans-serif;
+    font-family: 'Noto sans', sans-serif;
+    padding: 16px;
 }
+
 .social input {
-	margin-right: 7px;
-	position: relative;
-	top: 2px;
+    position: relative;
+    top: 2px;
+    margin-right: 7px;
 }
+
 .social label {
-	display: block;
-	margin-bottom: 12px;
-	color: #222;
+    display: block;
+    margin-bottom: 12px;
+    color: #222;
 }
+
 .social .blockHeader {
-	display: block;
+    display: block;
 }
+
 .social .blockNext {
-	position: absolute;
-    color: white;
-    right: 0;
+    position: absolute;
     top: 0;
-}
-.blockName {
-	color: #2954a7;
-	margin-bottom: 20px;
-}
-.social button {
-	    padding: 8px 15px;
-    line-height: 1em;
-    background: linear-gradient(#e75957,#c31a1f);
-    border: none;
-    border-radius: 3px;
-    font-weight: 700;
+    right: 0;
     color: white;
+}
+
+.blockName {
+    margin-bottom: 20px;
+    color: #2954a7;
+}
+
+.social button {
+    font-weight: 700;
+    line-height: 1em;
+    position: relative;
+    z-index: 1;
     float: right;
     margin-bottom: 16px;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(#e75957, #c31a1f);
 }
+
 .onlineReception {
     display: inline-block;
     float: right;
     width: 32%;
     min-height: 200px;
     margin-right: 2%;
-    border: 1px solid blue;
+    background-color: #f4f8ff;
+}
+
+.submitHover {
+    position: absolute;
+    z-index: -1;
+    top: 9px;
+    left: 62px;
+    width: 10px;
+    height: 10px;
+    transition: all .5s ease 0s;
+    opacity: 0;
+    background-image: url('../images/formButtonSoc.png');
+    background-size: 100% 100%;
+}
+
+.social button[type=submit]:hover .submitHover {
+    z-index: -1;
+    top: -99px;
+    left: -46px;
+    display: inline-block;
+    width: 228px;
+    height: 228px;
+    opacity: 1;
+}
+
+.onlineReception .blockHeader {
+    display: block;
+}
+
+.onlineReception figure {
+    margin-bottom: 16px;
+}
+
+.onlineReception form {
+    padding: 16px;
+}
+
+.onlineReception select {
+    font-family: 'Noto sans', sans-serif;
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 7px;
+    border-radius: 3px;
+    background: white;
+}
+
+.onlineReception figure div {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 135px;
+    height: 135px;
+}
+
+.onlineReception figure div img {
+    min-height: 135px;
+}
+
+.onlineReception figcaption {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 150px);
+}
+
+.onlineReception p:nth-child(1) {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 70%;
+    margin-bottom: 25px;
+    color: #2954a7;
+}
+
+.onlineReception p:nth-child(2) {
+    font-family: 'Noto sans', sans-serif;
+    display: block;
+    width: 100%;
+    color: #222;
+}
+
+.onlineReception button {
+    font-weight: 700;
+    line-height: 1em;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(#e75957, #c31a1f);
 }
