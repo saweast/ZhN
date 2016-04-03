@@ -741,21 +741,79 @@
     font-size: 0;
     display: inline-block;
 }
+
 .zhitomirLiveHeader {
+    font-size: 1.3em;
+    font-weight: 700;
+    position: absolute;
+    bottom: 60px;
+    margin-right: 15px;
+    padding: 15px;
+    color: white;
+    background-image: url('../images/sliderTextBackground.png');
+    background-size: 100% 100%;
+}
+
+.zhitomirLiveDesc {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    color: #a1b2dd;
+}
+
+.social {
+    display: inline-block;
+    float: right;
+    width: 32%;
+    min-height: 200px;
+    border: 1px solid red;
+	position: relative;
+	background-color: #f4f8ff;
+}
+.social form {
+	padding: 16px;
+	font-family: "Noto sans", sans-serif;
+}
+.social input {
+	margin-right: 7px;
+	position: relative;
+	top: 2px;
+}
+.social label {
+	display: block;
+	margin-bottom: 12px;
+	color: #222;
+}
+.social .blockHeader {
+	display: block;
+}
+.social .blockNext {
 	position: absolute;
     color: white;
-    font-weight: 700;
-    bottom: 60px;
-    padding: 15px;
-    margin-right: 15px;
-	font-size: 1.3em;
-	background-size: 100% 100%;
-	background-image: url('../images/sliderTextBackground.png');
+    right: 0;
+    top: 0;
 }
-.zhitomirLiveDesc {
-	position:absolute;
-	bottom: 16px;
-	right: 16px;
-	left: 16px;
-	color: #a1b2dd;
+.blockName {
+	color: #2954a7;
+	margin-bottom: 20px;
+}
+.social button {
+	    padding: 8px 15px;
+    line-height: 1em;
+    background: linear-gradient(#e75957,#c31a1f);
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    color: white;
+    float: right;
+    margin-bottom: 16px;
+}
+.onlineReception {
+    display: inline-block;
+    float: right;
+    width: 32%;
+    min-height: 200px;
+    margin-right: 2%;
+    border: 1px solid blue;
 }
