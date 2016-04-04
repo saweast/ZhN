@@ -956,10 +956,65 @@
     font-size: 1.1em;
     color: #2954a7;
 }
-.birthday p {
+.birthday p:first-child {
     font-size: 1em;
     color: #222;
+    font-family: "Noto sans", sans-serif;
 }
 .birthday p:last-child {
     color: #999;
+}
+
+.advice {
+    float: right;
+    position: relative;
+    width: 66%;
+    margin-bottom: 20px;
+    border-left: 3px solid #dde9ff;
+    border-right: 3px solid #dde9ff;
+    border-bottom: 3px solid #dde9ff;
+}
+.advice .blockHeader {
+    background: linear-gradient(#dde9ff, #dce9ff);
+    display: block;
+    color: #3e62ae;
+    padding-left: 12px;
+}
+.advice ul {
+    padding: 20px 12px;
+    margin-bottom: -30px;
+}
+.advice li {
+    padding-left: 12px ;
+    position: relative;
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+    margin-bottom: 30px;
+    font-family: "Noto sans", sans-serif;
+}
+.advice li:nth-child(2n) {
+    margin-right: 0%;
+
+}
+.advice li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-right: 9px;
+    height: 5px;
+    width: 5px;
+        top: 7px;
+    left: 0;
+    background-color: #2954a7;
+}
+.advice::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url("../images/snoska.gif");
+    width: 25px;
+    height: 26px;
+    transform: rotateY(190deg);
+    left: 35px;
 }
