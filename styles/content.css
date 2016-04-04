@@ -686,6 +686,7 @@
     overflow: hidden;
     width: 32%;
     min-height: 393px;
+    margin-bottom: 20px;
     margin-right: 2%;
 }
 
@@ -913,10 +914,15 @@
     z-index: 1;
     width: 100%;
     display: block;
-    margin-bottom: 16px;
     padding: 8px 15px;
     color: white;
     border: none;
     border-radius: 3px;
     background: linear-gradient(#e75957, #c31a1f);
+}
+
+.kitchen {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 2%;
 }
