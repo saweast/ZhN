@@ -1018,3 +1018,101 @@
     transform: rotateY(190deg);
     left: 35px;
 }
+.calendar {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    min-height: 246px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+.calendar .blockHeader {
+    display: block;
+}
+.satire {
+    float: right;
+    width: 32%;
+    margin-bottom: 20px;
+}
+.satire .blockHeader {
+    display: block;
+}
+.satire .satireImgWrapper {
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+.satire .satireImgWrapper img {
+    position: relative;
+    height: 320px;
+    left: -20%;
+}
+.satire .satireTextWrapper {
+    background: #f4f8ff;
+    padding: 20px 13px;
+}
+.satire .satireTextWrapper p {
+    color: #2954a7;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.lastComments {
+    margin-bottom: 20px;
+    float: right;
+    margin-left: 2%;
+    width: 32%;
+    position: relative;
+}
+.lastComments .blockHeader {
+    display: block;
+    background: linear-gradient(#eef4ff, #dce9ff);
+    color: #2954a7;
+}
+.lastComments .comments {
+    border: 3px solid #dde9ff;
+    border-top: none;
+    position: relative;
+}
+.lastComments .comments::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 26px;
+    right: 34px;
+    background-size: 100% 100%;
+    background-image: url("../images/snoska.gif");
+}
+.lastComments::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 43px;
+    width: 250px;
+    background-image: url("../images/lastCommetsAfter.png");
+    background-size: 100% 100%;
+    left: 38px;
+}
+.lastComments .comments li {
+    padding: 17px 0;
+    margin: 0 16px;
+    border-bottom: 1px solid #f4f8ff;
+}
+.lastComments .comments li:last-child {
+    border-bottom: none;
+}
+.comments li h3 {
+    color: #2954a7;
+    font-size: 1.1em;
+}
+.comments li p {
+    color: #323232;
+    font-family: "Noto sans", sans-serif;
+}
+.add {
+    width: 32%;
+    height: 120px;
+    background-color: #f4f8ff;
+    border: 1px solid #dde9ff;
+    float: left;
+}
