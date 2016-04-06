@@ -36,6 +36,11 @@ body {
     font-size: 13px;
 }
 
+.clear-b::before {
+    display: table;
+    clear: both;
+    content: '';
+}
 .clear::after {
     display: table;
     clear: both;
