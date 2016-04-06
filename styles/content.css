@@ -1169,3 +1169,53 @@
     font-family: "Noto sans", sans-serif;
     font-size: 1.1em;
 }
+.mainFooter {
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    border-top: 3px solid #2954a7;
+}
+.fSiteNav li {
+    font-family: "Noto sans", sans-serif;
+    
+    margin-right: 25px;
+}
+.fMainNav {
+    margin-bottom: 40px;
+}
+.fMainNav li {
+    margin-right: 47px;
+}
+.fSiteNav li,
+.fMainNav li {
+    color: #222;
+    font-size: 1.1em;
+    font-weight: 700;
+    float: left;
+}
+.fMainNav li a:hover,
+.fSiteNav li a:hover {
+    color: #2954a7;
+}
+.fSiteNav::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 1px;
+    background-color: #dce9ff;
+    width: 80%;
+}
+.rights {
+    width: 66%;
+    display: inline-block;
+    font-family: "Noto sans", sans-serif;
+    font-size: 0.9em;
+}
+.copyright {
+    float: right;
+    position: relative;
+    bottom: -30px;
+}
