@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9de28432-9519-404d-b4fb-e4e1edc228b3" name="zhnews" url="http://ftp.vlove.com.ua">
+        <fileTransfer host="ftp.vlove.com.ua" port="21" rootFolder="/domains/teadrinker.xyz/zhitomirnews" password="df98df9ddf9adf9cdf9bdf93df93df9f" username="vlovecom">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
