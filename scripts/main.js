@@ -1,9 +1,8 @@
 window.onload = function () {
+    // slider
     var sControl = document.getElementsByClassName('sliderControls')[0];
     var slider = document.getElementsByClassName('sliderWrap')[0];
-
     sControl.children[0].style.borderBottom = "3px solid #d62424";
-
     sControl.addEventListener('click', function (event) {
         var target = event.target;
         var buf = '';
@@ -12,17 +11,96 @@ window.onload = function () {
         } else {
             target = target.parentElement;
         }
-
-
         for (var item = 0; item < sControl.children.length; item++) {
             if (target == sControl.children[item]) {
                 slider.style.left = -733 * item + "px";
                 target.style.borderBottom = "3px solid #d62424";
-
-
             } else {
                 sControl.children[item].style.borderBottom = "0px solid #d62424";
             }
         }
-    })
-}
+    });
+    // calendar   calToday
+    var monthArr = ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+    var engMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var todayMonth = new Date().getUTCMonth();
+    var todayDate = new Date().getUTCDate();
+    var todayYear = new Date().getUTCFullYear();
+    makeCalendar(engMonth[todayMonth], todayYear, todayDate+1);
+    var calendar = document.getElementsByClassName('calendar')[0];
+    var prevB = calendar.getElementsByClassName('prev')[0];
+    var nextB = calendar.getElementsByClassName('next')[0];
+    var control = calendar.getElementsByClassName('control')[0];
+
+    control.addEventListener('click', function (event) {
+        var monthFrom = calendar.getElementsByTagName('span')[0];
+        monthFrom = monthFrom.textContent;
+        var yearFrom = calendar.getElementsByTagName('span')[1];
+        yearFrom = yearFrom.textContent;
+        yearFrom = parseInt(yearFrom);
+        var target = event.target;
+        if (target == prevB) {
+            console.log(monthFrom+':'+yearFrom);
+            for (var i = 0; i < monthArr.length; i++){
+                if (monthFrom == monthArr[i]) {
+                    if (engMonth[i] == 'undefined') {
+                        makeCalendar(engMonth[11], yearFrom);
+                    }
+                    makeCalendar(engMonth[i-1], yearFrom);
+                }
+            }
+        }
+        if (target == nextB) {
+            for (var i = 0; i < monthArr.length; i++){
+                if (monthFrom.textContent == monthArr[i]) {
+                    makeCalendar(engMonth[i+1], yearFrom);
+                }
+            }
+        }
+    });
+
+    function clearCalendar() {
+        var cal = document.getElementsByClassName('calendar')[0];
+        var name = cal.getElementsByClassName('blockHeader')[0];
+        var calDate = cal.getElementsByClassName('calDate')[0];
+        name.innerHTML = "";
+        var mm = calDate.children.length;
+        for (var k = 0; k <= mm; k++) {
+            if (calDate.children.length == '0') break;
+            calDate.removeChild(calDate.children[0]);
+        }
+    }
+    function makeCalendar(month, year, today) {
+        clearCalendar();
+        var today = today || "";    // если задан день то збсь)
+        var startDay = new Date(month + " 1, " + year), // какой месяц
+            dayStart = startDay.getDay(),   // с какого дня начинаеться месяц
+            cal = document.getElementsByClassName('calendar')[0],
+            calDate = cal.getElementsByClassName('calDate')[0],
+            name = cal.getElementsByClassName('blockHeader')[0],
+            dayArr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31], // количества дней в месяце (с февралем пока не порешал)
+            monthLength = dayArr[startDay.getMonth()];
+        name.innerHTML = "АРХІВ НОВИН ЗА <span>" + monthArr[startDay.getMonth()] + "</span> <span>" + startDay.getUTCFullYear() + "</span>";
+        for (var j = 1; j < dayStart; j++) {    // пропускаем дни
+            var fakeLi = document.createElement('li'),
+                fakeA = document.createElement('a'),
+                textNodeX = document.createTextNode(' ');
+            fakeA.appendChild(textNodeX);
+            fakeLi.appendChild(fakeA);
+            calDate.appendChild(fakeLi);
+        }
+        for (var i = 1; i <= monthLength; i++) { // рисуем дни
+            var newLi = document.createElement('li'),
+                newA = document.createElement('a'),
+                textNode = document.createTextNode(i);
+            if (i == today) {
+                newLi.setAttribute('class', 'calToday');
+            }
+            newA.setAttribute('href', "#blabla_"+i);
+            newA.appendChild(textNode);
+            newLi.appendChild(newA);
+            calDate.appendChild(newLi);
+        }
+
+    }
+};

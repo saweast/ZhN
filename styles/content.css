@@ -837,7 +837,7 @@ div.sliderItemWrap {
     min-height: 200px;
     margin-right: 2%;
     background-color: #f4f8ff;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 }
 
 .submitHover {
@@ -1034,9 +1034,56 @@ div.sliderItemWrap {
     min-height: 246px;
     border: 1px solid red;
     margin-bottom: 20px;
+    background: #f4f8ff;
+    position: relative;
 }
 .calendar .blockHeader {
     display: block;
+}
+.calWrap {
+    padding: 16px;
+    font-family: "Noto sans", sans-serif;
+    color: #222222
+}
+.calDay {
+    background: white;
+}
+.calDay li {
+    float: left;
+    text-align: center;
+    width: calc(100% / 7);
+    line-height: 1em;
+    padding: 7px 0;
+}
+.calDate li {
+    display: inline-block;
+    width: calc(100% / 7);
+    line-height: 1em;
+    padding: 7px 0;
+    text-align: center;
+}
+/*17x27*/
+.calendar .control {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+.calendar button {
+    height: 14px;
+    width: 7px;
+    background-color: transparent;
+    background-image: url('../images/sliderNext.png');
+    background-size: 100% 100%;
+    outline: none;
+    border: none;
+}
+.calendar .prev {
+    background-image: url("../images/sliderPrev.png");
+}
+.calToday {
+    background: linear-gradient(#677fbe, #2b4691);
+    color: white;
 }
 .satire {
     float: right;
