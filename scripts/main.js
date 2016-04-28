@@ -40,20 +40,30 @@ window.onload = function () {
         yearFrom = parseInt(yearFrom);
         var target = event.target;
         if (target == prevB) {
-            console.log(monthFrom+':'+yearFrom);
             for (var i = 0; i < monthArr.length; i++){
                 if (monthFrom == monthArr[i]) {
-                    if (engMonth[i] == 'undefined') {
-                        makeCalendar(engMonth[11], yearFrom);
+                    if (i == '0') {
+                        makeCalendar("December", yearFrom-1);
+                        break;
+                    } if (i == '1') {
+                        makeCalendar(engMonth[0], yearFrom+1);
+                    } else {
+                        makeCalendar(engMonth[i-1], yearFrom);
                     }
-                    makeCalendar(engMonth[i-1], yearFrom);
                 }
             }
         }
         if (target == nextB) {
-            for (var i = 0; i < monthArr.length; i++){
-                if (monthFrom.textContent == monthArr[i]) {
-                    makeCalendar(engMonth[i+1], yearFrom);
+            for (var j = 0; j < monthArr.length; j++){
+                if (monthFrom == monthArr[j]) {
+                    if (j == '11') {
+                        makeCalendar("January", yearFrom+2);
+                        break;
+                    } if (j == '10') {
+                        makeCalendar(engMonth[11], yearFrom);
+                    } else {
+                        makeCalendar(engMonth[j+1], yearFrom);
+                    }
                 }
             }
         }
@@ -78,8 +88,13 @@ window.onload = function () {
             cal = document.getElementsByClassName('calendar')[0],
             calDate = cal.getElementsByClassName('calDate')[0],
             name = cal.getElementsByClassName('blockHeader')[0],
-            dayArr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31], // количества дней в месяце (с февралем пока не порешал)
-            monthLength = dayArr[startDay.getMonth()];
+            dayArr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // количества дней в месяце (с февралем пока не порешал)
+        if (month == 'February') {
+            if (year % 4 == 0) {
+                dayArr[1] = 29;
+            }
+        }
+        var monthLength = dayArr[startDay.getMonth()];
         name.innerHTML = "АРХІВ НОВИН ЗА <span>" + monthArr[startDay.getMonth()] + "</span> <span>" + startDay.getUTCFullYear() + "</span>";
         for (var j = 1; j < dayStart; j++) {    // пропускаем дни
             var fakeLi = document.createElement('li'),
