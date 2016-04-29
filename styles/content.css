@@ -256,7 +256,7 @@ div.sliderItemWrap {
     margin-right: 1%;
     cursor: pointer;
     max-height: 70px;
-    min-height: 70px;
+    min-height: 83px;
     position: relative;
     overflow: hidden;
 }
@@ -1032,7 +1032,6 @@ div.sliderItemWrap {
     margin-right: 2%;
     float: left;
     min-height: 246px;
-    border: 1px solid red;
     margin-bottom: 20px;
     background: #f4f8ff;
     position: relative;
@@ -1276,3 +1275,129 @@ div.sliderItemWrap {
     position: relative;
     bottom: -30px;
 }
+
+/*video news*/
+.videoNewsWrap {
+    width: 66%;
+    display: inline-block;
+
+}
+
+
+
+.asideInfo {
+    width: 32%;
+    float: right;
+}
+.asideInfo .zhitomirToday {
+    margin-top: 0;
+    margin-right: 0;
+}
+.asideInfo .zhitomirToday,
+.asideInfo .todayWord,
+.asideInfo .social,
+.asideInfo .afisha,
+.asideInfo .mainSlider {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.asideInfo .sliderItemWrap time,
+.asideInfo .sliderItemWrap h2 {
+    font-size: 1.1em;
+}
+.asideInfo .sliderItemWrap p {
+    font-size: 1.4em;
+}
+.asideInfo .sliderItemWrap span {
+    font-size: 1.2em;
+}
+.asideInfo .sliderDiv {
+    width: 100%;
+    height: 295px;
+}
+.asideInfo .sliderItemWrap img {
+    height: 295px;
+    width: auto;
+    min-width: auto;
+}
+.asideInfo div.sliderItemWrap {
+    width: 355px;
+    height: 295px;
+}
+.asideInfo .sliderControls li {
+    width: calc(100% / 3.2);
+    margin-right: 3%;
+    min-height: 67px;
+}
+.asideInfo .sliderControls li:last-child {
+    margin-right: 0;
+}
+.asideInfo .zhitomirLive {
+    float: none;
+    width: 100%;
+    min-height: auto;
+    margin-right: 0;
+    background-color: #5a73b4;
+    padding: 15px;
+}
+.asideInfo .zhitomirLive h2 {
+    font-family: "Noto sans", sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    padding: 12px 15px;
+    background: url("../images/zhLiveHorlBg.png");
+    background-size: 100% 100%;
+    line-height: 1em;
+}
+.asideInfo .zhitomirLive .h2Wrap {
+    margin-bottom: 16px;
+}
+.asideInfo .zhitomirLive span {
+    width: auto;
+    margin-top: 0;
+    margin-left: 9%;
+}
+.asideInfo .zhitomirLive a.zLwatch {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    color: white;
+}
+.asideInfo .zhitomirLive img {
+    position: relative;
+    z-index: 0;
+    left: 0;
+    height: 95px;
+    width: auto;
+}
+.asideInfo .zhitomirLive .moreNewsImgWrap {
+    width: 95px;
+    display: inline-block;
+    height: 95px;
+    overflow: hidden;
+}
+.asideInfo .zhitomirLive figcaption {
+    width: 66%;
+    float: right;
+    height: 95px;
+    display: table;
+    border-top: 1px solid #6c88d1;
+}
+.asideInfo .zhitomirLive figcaption p {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    clear: both;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+.asideInfo .zhitomirLive figure {
+    margin-bottom: 15px;
+}
+.asideInfo .zhitomirLive figure:last-child {
+    margin-bottom: 0;
+}
+/**/

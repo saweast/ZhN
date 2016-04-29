@@ -13,7 +13,11 @@ window.onload = function () {
         }
         for (var item = 0; item < sControl.children.length; item++) {
             if (target == sControl.children[item]) {
-                slider.style.left = -733 * item + "px";
+                if (target.parentElement.parentElement.parentElement.className == "asideInfo") { //fix for video page
+                    slider.style.left = -355 * item + "px";
+                } else {
+                    slider.style.left = -733 * item + "px";
+                }
                 target.style.borderBottom = "3px solid #d62424";
             } else {
                 sControl.children[item].style.borderBottom = "0px solid #d62424";
@@ -26,6 +30,7 @@ window.onload = function () {
     var todayMonth = new Date().getUTCMonth();
     var todayDate = new Date().getUTCDate();
     var todayYear = new Date().getUTCFullYear();
+    
     makeCalendar(engMonth[todayMonth], todayYear, todayDate+1);
     var calendar = document.getElementsByClassName('calendar')[0];
     var prevB = calendar.getElementsByClassName('prev')[0];
@@ -68,7 +73,6 @@ window.onload = function () {
             }
         }
     });
-
     function clearCalendar() {
         var cal = document.getElementsByClassName('calendar')[0];
         var name = cal.getElementsByClassName('blockHeader')[0];
@@ -116,6 +120,5 @@ window.onload = function () {
             newLi.appendChild(newA);
             calDate.appendChild(newLi);
         }
-
     }
 };
