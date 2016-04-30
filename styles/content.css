@@ -1620,4 +1620,93 @@ div.sliderItemWrap {
     float: right;
     width: 31%;
 }
+.insideInfo .birthday,
+.insideInfo .focusOfTheWeek,
+.insideInfo .interview {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+}
+.insideInfo .focusOfTheWeek {
+    padding-bottom: 15px;
+}
+.insideInfo .birthday .birthdayImgWrap {
+    margin-right: 15px;
+}
+.insideInfo .interview,
+.insideInfo .birthday figure {
+    width: 100%;
+    background: #f4f8ff;
+    border-left: 1px solid #ecf3ff;
+    border-rigth: 1px solid #ecf3ff;
+}
+.insideInfo .blockHeader {
+    font-size: 1.1em;
+    background: linear-gradient(#eef4ff, #dce9ff);
+    color: #2954a7;
+    display: block;
+}
+.insideInfo .focusOfTheWeek li {
+    padding-left: 12px;
+    position: relative;
+    width: auto;
+    margin-right: 0;
+    float: none;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-family: "Noto sans", sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.insideInfo .focusOfTheWeek li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-right: 9px;
+    height: 5px;
+    width: 5px;
+    top: 7px;
+    left: 0;
+    background-color: #2954a7;
+}
+
+.insideInfo .interview li {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+.insideInfo .interview li:last-child {
+    border-bottom: none;
+}
+
+.insideInfo .interview figcaption {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 75px);
+}
+
+.insideInfo .interview h3 {
+    color: #2954a7;
+}
+
+.insideInfo .interview p {
+    font-family: 'Noto sans', sans-serif;
+     font-size: 0.95em;
+     font-weight: 400;
+     padding: 0;
+     color: #222222;
+     background-color: transparent;
+}
+
+.insideInfo .interview time {
+    color: #999;
+}
+.insideInfo .interview .blogImgWrapper {
+    border-radius: 0;
+}
+
 /**/
