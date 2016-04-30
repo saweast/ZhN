@@ -1520,7 +1520,7 @@ div.sliderItemWrap {
     padding: 19px 15px;
     font-weight: bold;
 }
-.textBlog p {
+.textBlog > p {
     margin-top: 25px;
     font-family: 'Noto sans', sans-serif;
     text-align: justify;
@@ -1561,6 +1561,60 @@ div.sliderItemWrap {
 .textBlog .tags a {
     font-weight: 400;
     color: #2954a7;
+}
+.simply {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.simply .headerSimply::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 290px;
+    background: #4963a8;
+    top: 20px;
+    right: 0;
+}
+.simply .headerSimply {
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    background: linear-gradient(#677fbe ,#2a4691);
+    font-family: "Noto sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1em;
+    padding: 13px 15px;
+}
+.simply li {
+    margin-top: 20px;
+
+}
+.simply .data {
+    color: #999999;
+    font-family: "Noto sans", sans-serif;
+    float: left;
+    width: 90px;
+    text-align: center;
+}
+.simply .text {
+    color: #222222;
+    display: inline-block;
+    font-size: 1.1em;
+    width: calc(100% - 90px);
+}
+.photoVideoSimply {
+    position: relative;
+}
+.photoVideoSimply .photoNewsSlider,
+.photoVideoSimply .videoNewsSlider {
+    float: left;
+    width: 50%;
+}
+.photoVideoSimply .photoNewsSlider .imgWrap img,
+.photoVideoSimply .videoNewsSlider .imgWrap img{
+    width: 100%;
 }
 .insideInfo {
     float: right;
