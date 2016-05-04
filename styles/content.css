@@ -1277,6 +1277,7 @@ div.sliderItemWrap {
 }
 
 /*video news*/
+.photoNewsWrap ,
 .videoNewsWrap {
     width: 66%;
     display: inline-block;
@@ -1566,6 +1567,7 @@ div.sliderItemWrap {
     width: 100%;
     position: relative;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .simply .headerSimply::after {
     content: '';
@@ -1622,6 +1624,8 @@ div.sliderItemWrap {
 }
 .insideInfo .birthday,
 .insideInfo .focusOfTheWeek,
+.insideInfo .blogs,
+.insideInfo .advice,
 .insideInfo .interview {
     width: 100%;
     float: none;
@@ -1634,6 +1638,7 @@ div.sliderItemWrap {
     margin-right: 15px;
 }
 .insideInfo .interview,
+.insideInfo .blogs,
 .insideInfo .birthday figure {
     width: 100%;
     background: #f4f8ff;
@@ -1671,7 +1676,8 @@ div.sliderItemWrap {
     background-color: #2954a7;
 }
 
-.insideInfo .interview li {
+.insideInfo .interview li,
+.insideInfo .blogs li {
     margin-right: 15px;
     margin-left: 15px;
     padding-top: 15px;
@@ -1679,20 +1685,24 @@ div.sliderItemWrap {
     border-bottom: 1px solid #fff;
 }
 
+.insideInfo .blogs li:last-child,
 .insideInfo .interview li:last-child {
     border-bottom: none;
 }
 
+.insideInfo .blogs figcaption,
 .insideInfo .interview figcaption {
     display: inline-block;
     float: right;
     width: calc(100% - 75px);
 }
 
+.insideInfo .blogs h3,
 .insideInfo .interview h3 {
     color: #2954a7;
 }
 
+.insideInfo .blogs p,
 .insideInfo .interview p {
     font-family: 'Noto sans', sans-serif;
      font-size: 0.95em;
@@ -1702,11 +1712,108 @@ div.sliderItemWrap {
      background-color: transparent;
 }
 
+.insideInfo .blogs time,
 .insideInfo .interview time {
     color: #999;
+}
+.insideInfo .blogs .blogImgWrapper {
+    border-radius: 50%;
+}
+.insideInfo .blogs {
+    min-height: auto;
+}
+.insideInfo .advice li {
+    width: 100%;
+    float: none;
+    margin-right: 0;
 }
 .insideInfo .interview .blogImgWrapper {
     border-radius: 0;
 }
 
 /**/
+/*кароче для фото страницы*/
+.photoSlider {
+    /*margin-bottom: 20px;*/
+}
+.photoSliderItem {
+    height: 480px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.photoSliderItem time {
+    position: absolute;
+    left: 16px;
+    color: #666666;
+    top: 16px;
+    line-height: 1em;
+    padding: 13px 16px;
+    background: linear-gradient(#fff, rgba(255,255,255, .85));
+}
+.photoSliderItem p {
+    background-image: url("../images/sliderTextBackground.png");
+    background-size: 100% 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 2.4em;
+    padding: 20px;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+.photoSliderItem img {
+    width: 100%;
+}
+.photoSliderItem a {
+    display: inline-block;
+}
+.photoSlider .owl-prev,
+.photoSlider .owl-next {
+    font-size: 0;
+    height: 30px;
+    width: 18px;
+    background-image: url('../images/sliderPrev.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 45%;
+    left: 16px;
+}
+.photoSlider .owl-next {
+    left: calc(100% - 32px);
+    background-image: url('../images/sliderNext.png');
+}
+.photoItem {
+    width: 48.6%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.photoItem:nth-child(odd) {
+    float: right;
+}
+.photoItem a {
+    display: inline-block;
+}
+.photoItem .imgWrap {
+    position: relative;
+    height: 235px;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.75));
+}
+.photoItem img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+.photoItem p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.4em;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
