@@ -174,15 +174,81 @@
         </header>
         <section class="content">
             <section class="clear">
-                <div class="videoNewsWrap">
-                    <article class="blockForBlog">
-                        <section class="mainBlockForBlog">
-                            <h2>В Житомире на улице мотоциклист сбил женщину и на ходу врезался в автомобиль</h2>
-                            <time>04.08.2015 09:13</time>
-                            <div class="mainVideoWrap">
-                                <iframe class="mainVideo" src="https://www.youtube.com/embed/8mANvt9M7cQ" frameborder="0" allowfullscreen></iframe>
+                <div class="photoNewsWrap">
+                    <article class="mainBlockForBlog">
+                        <h2>В Житомире на улице мотоциклист сбил женщину и на ходу врезался в автомобиль</h2>
+                        <time>04.08.2015 09:13</time>
+                        <section class="themeSlider">
+
+                            <div class="sliderDiv">
+                                <ul class="sliderWrap">
+                                    <li class="sliderItem">
+                                        <img src="images/slider/3.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/2.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/1.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/4.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/5.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/1.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/2.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/3.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/4.jpg" alt="">
+                                    </li>
+                                    <li class="sliderItem">
+                                        <img src="images/slider/5.jpg" alt="">
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="blockForSocRetweets"></div>
+                            <div class="sliderControlsHelpWrap">
+                                <ul class="sliderControlsHelp">
+                                    <li>
+                                        <img src="images/slider/3.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/2.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/1.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/4.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/5.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/1.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/2.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/3.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/4.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="images/slider/5.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+
                         </section>
                         <section class="textBlog">
                             <p class="red">В ходе уголовного производства, начатого по ч. 3 ст. 185 (Кража) Уголовного кодекса Украины, установлено, что человек в течение июля-августа обокрал крайней мере 3 дома по ул. Театральной и переулку в центре.</p>
@@ -669,11 +735,23 @@
 <script type="text/javascript" src="scripts/main.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+        $(".sliderWrap").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 0,
+            nav: true
+        });
+        $(".sliderControlsHelp").owlCarousel({
+            items: 6,
+            loop: true,
+            margin: 11,
+            nav: true
+        });
         $(".owl-carousel").owlCarousel({
             items: 3,
             loop: true,
             margin: 10,
-            nav: true,
+            nav: true
         });
         $(".owl-carousel-photo").owlCarousel({
             items: 3,

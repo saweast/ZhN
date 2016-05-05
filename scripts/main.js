@@ -1,4 +1,9 @@
 window.onload = function () {
+    //модифицирую слайдер для фотостраницы... ибо там пезда:D
+    var photoSliderMainBlock = document.getElementsByClassName('sliderWrap')[0],
+        photoSliderControls = document.getElementsByClassName('sliderControlsHelp')[0],
+        photoSliderMainBlockE = photoSliderMainBlock.getElementsByName('owl-item'),
+        photoSliderControlsE = photoSliderControls.getElementsByName('owl-item');
     // slider
     var sControl = document.getElementsByClassName('sliderControls')[0];
     var slider = document.getElementsByClassName('sliderWrap')[0];
@@ -31,94 +36,98 @@ window.onload = function () {
     var todayDate = new Date().getUTCDate();
     var todayYear = new Date().getUTCFullYear();
     
-    makeCalendar(engMonth[todayMonth], todayYear, todayDate+1);
-    var calendar = document.getElementsByClassName('calendar')[0];
-    var prevB = calendar.getElementsByClassName('prev')[0];
-    var nextB = calendar.getElementsByClassName('next')[0];
-    var control = calendar.getElementsByClassName('control')[0];
+    try{
+        makeCalendar(engMonth[todayMonth], todayYear, todayDate+1);
+        var calendar = document.getElementsByClassName('calendar')[0];
+        var prevB = calendar.getElementsByClassName('prev')[0];
+        var nextB = calendar.getElementsByClassName('next')[0];
+        var control = calendar.getElementsByClassName('control')[0];
+        control.addEventListener('click', function (event) {
+            var monthFrom = calendar.getElementsByTagName('span')[0];
+            monthFrom = monthFrom.textContent;
+            var yearFrom = calendar.getElementsByTagName('span')[1];
+            yearFrom = yearFrom.textContent;
+            yearFrom = parseInt(yearFrom);
+            var target = event.target;
+            if (target == prevB) {
+                for (var i = 0; i < monthArr.length; i++){
+                    if (monthFrom == monthArr[i]) {
+                        if (i == '0') {
+                            makeCalendar("December", yearFrom-1);
+                            break;
+                        } if (i == '1') {
+                            makeCalendar(engMonth[0], yearFrom+1);
+                        } else {
+                            makeCalendar(engMonth[i-1], yearFrom);
+                        }
+                    }
+                }
+            }
+            if (target == nextB) {
+                for (var j = 0; j < monthArr.length; j++){
+                    if (monthFrom == monthArr[j]) {
+                        if (j == '11') {
+                            makeCalendar("January", yearFrom+2);
+                            break;
+                        } if (j == '10') {
+                            makeCalendar(engMonth[11], yearFrom);
+                        } else {
+                            makeCalendar(engMonth[j+1], yearFrom);
+                        }
+                    }
+                }
+            }
+        });
+        function clearCalendar() {
+            var cal = document.getElementsByClassName('calendar')[0];
+            var name = cal.getElementsByClassName('blockHeader')[0];
+            var calDate = cal.getElementsByClassName('calDate')[0];
+            name.innerHTML = "";
+            var mm = calDate.children.length;
+            for (var k = 0; k <= mm; k++) {
+                if (calDate.children.length == '0') break;
+                calDate.removeChild(calDate.children[0]);
+            }
+        }
+        function makeCalendar(month, year, today) {
+            clearCalendar();
+            var today = today || "";    // если задан день то збсь)
+            var startDay = new Date(month + " 1, " + year), // какой месяц
+                dayStart = startDay.getDay(),   // с какого дня начинаеться месяц
+                cal = document.getElementsByClassName('calendar')[0],
+                calDate = cal.getElementsByClassName('calDate')[0],
+                name = cal.getElementsByClassName('blockHeader')[0],
+                dayArr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // количества дней в месяце (с февралем пока не порешал)
+            if (month == 'February') {
+                if (year % 4 == 0) {
+                    dayArr[1] = 29;
+                }
+            }
+            var monthLength = dayArr[startDay.getMonth()];
+            name.innerHTML = "АРХІВ НОВИН ЗА <span>" + monthArr[startDay.getMonth()] + "</span> <span>" + startDay.getUTCFullYear() + "</span>";
+            for (var j = 1; j < dayStart; j++) {    // пропускаем дни
+                var fakeLi = document.createElement('li'),
+                    fakeA = document.createElement('a'),
+                    textNodeX = document.createTextNode(' ');
+                fakeA.appendChild(textNodeX);
+                fakeLi.appendChild(fakeA);
+                calDate.appendChild(fakeLi);
+            }
+            for (var i = 1; i <= monthLength; i++) { // рисуем дни
+                var newLi = document.createElement('li'),
+                    newA = document.createElement('a'),
+                    textNode = document.createTextNode(i);
+                if (i == today) {
+                    newLi.setAttribute('class', 'calToday');
+                }
+                newA.setAttribute('href', "#blabla_"+i);
+                newA.appendChild(textNode);
+                newLi.appendChild(newA);
+                calDate.appendChild(newLi);
+            }
+        }
+    } catch (e) {}
 
-    control.addEventListener('click', function (event) {
-        var monthFrom = calendar.getElementsByTagName('span')[0];
-        monthFrom = monthFrom.textContent;
-        var yearFrom = calendar.getElementsByTagName('span')[1];
-        yearFrom = yearFrom.textContent;
-        yearFrom = parseInt(yearFrom);
-        var target = event.target;
-        if (target == prevB) {
-            for (var i = 0; i < monthArr.length; i++){
-                if (monthFrom == monthArr[i]) {
-                    if (i == '0') {
-                        makeCalendar("December", yearFrom-1);
-                        break;
-                    } if (i == '1') {
-                        makeCalendar(engMonth[0], yearFrom+1);
-                    } else {
-                        makeCalendar(engMonth[i-1], yearFrom);
-                    }
-                }
-            }
-        }
-        if (target == nextB) {
-            for (var j = 0; j < monthArr.length; j++){
-                if (monthFrom == monthArr[j]) {
-                    if (j == '11') {
-                        makeCalendar("January", yearFrom+2);
-                        break;
-                    } if (j == '10') {
-                        makeCalendar(engMonth[11], yearFrom);
-                    } else {
-                        makeCalendar(engMonth[j+1], yearFrom);
-                    }
-                }
-            }
-        }
-    });
-    function clearCalendar() {
-        var cal = document.getElementsByClassName('calendar')[0];
-        var name = cal.getElementsByClassName('blockHeader')[0];
-        var calDate = cal.getElementsByClassName('calDate')[0];
-        name.innerHTML = "";
-        var mm = calDate.children.length;
-        for (var k = 0; k <= mm; k++) {
-            if (calDate.children.length == '0') break;
-            calDate.removeChild(calDate.children[0]);
-        }
-    }
-    function makeCalendar(month, year, today) {
-        clearCalendar();
-        var today = today || "";    // если задан день то збсь)
-        var startDay = new Date(month + " 1, " + year), // какой месяц
-            dayStart = startDay.getDay(),   // с какого дня начинаеться месяц
-            cal = document.getElementsByClassName('calendar')[0],
-            calDate = cal.getElementsByClassName('calDate')[0],
-            name = cal.getElementsByClassName('blockHeader')[0],
-            dayArr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // количества дней в месяце (с февралем пока не порешал)
-        if (month == 'February') {
-            if (year % 4 == 0) {
-                dayArr[1] = 29;
-            }
-        }
-        var monthLength = dayArr[startDay.getMonth()];
-        name.innerHTML = "АРХІВ НОВИН ЗА <span>" + monthArr[startDay.getMonth()] + "</span> <span>" + startDay.getUTCFullYear() + "</span>";
-        for (var j = 1; j < dayStart; j++) {    // пропускаем дни
-            var fakeLi = document.createElement('li'),
-                fakeA = document.createElement('a'),
-                textNodeX = document.createTextNode(' ');
-            fakeA.appendChild(textNodeX);
-            fakeLi.appendChild(fakeA);
-            calDate.appendChild(fakeLi);
-        }
-        for (var i = 1; i <= monthLength; i++) { // рисуем дни
-            var newLi = document.createElement('li'),
-                newA = document.createElement('a'),
-                textNode = document.createTextNode(i);
-            if (i == today) {
-                newLi.setAttribute('class', 'calToday');
-            }
-            newA.setAttribute('href', "#blabla_"+i);
-            newA.appendChild(textNode);
-            newLi.appendChild(newA);
-            calDate.appendChild(newLi);
-        }
-    }
+
+
 };
