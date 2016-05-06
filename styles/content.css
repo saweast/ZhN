@@ -2156,3 +2156,18 @@ div.sliderItemWrap {
     background: none;
     padding: 0;
 }
+.aboutH {
+    padding: 15px;
+    background-image: url('../images/aboutUsBg.png');
+    background-size: 100% 100%;
+}
+.aboutH h2 {
+    font-weight: bold;
+    font-size: 2.1em;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: white;
+}
+.aboutUs .textBlog {
+    width: 100%;
+}
