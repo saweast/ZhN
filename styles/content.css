@@ -2161,6 +2161,9 @@ div.sliderItemWrap {
     background-image: url('../images/aboutUsBg.png');
     background-size: 100% 100%;
 }
+.advices .aboutH {
+    background-image: url("../images/adviceBg.png");
+}
 .aboutH h2 {
     font-weight: bold;
     font-size: 2.1em;
@@ -2168,6 +2171,44 @@ div.sliderItemWrap {
     line-height: 1em;
     color: white;
 }
+.advices .textBlog,
 .aboutUs .textBlog {
     width: 100%;
+}
+.adviceItem {
+    padding: 23px 30px;
+    border: 3px solid #dde9ff;
+    margin-top: 30px;
+    position: relative;
+}
+.adviceItem::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-image: url("../images/snoska.gif");
+    width: 25px;
+    height: 26px;
+    bottom: -26px;
+    right: 35px;
+
+}
+.adviceItem h3 {
+    position: relative;
+    color: #2954a7;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+.adviceItem h3::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background: #324e97;
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    top: 9px;
+}
+.adviceItem p {
+    color: #222;
+    font-family: "Noto sans", sans-serif;
 }
