@@ -2167,6 +2167,9 @@ div.sliderItemWrap {
 .ques .aboutH {
     background-image: url("../images/quesBg.png");
 }
+.lider .aboutH {
+    background-image: url("../images/liderBg.png");
+}
 .aboutH h2 {
     font-weight: bold;
     font-size: 2.1em;
@@ -2175,6 +2178,7 @@ div.sliderItemWrap {
     color: white;
 }
 .ques .textBlog,
+.lider .textBlog,
 .advices .textBlog,
 .aboutUs .textBlog {
     width: 100%;
@@ -2280,4 +2284,58 @@ div.sliderItemWrap {
 }
 .answer:nth-child(9) .answerPercent {
     background-color: #6033bb;
+}
+.alphabet ul {
+    width: 98%;
+    margin: 0 1%;
+}
+.alphabet li {
+    width: calc(100% / 28);
+}
+.liderItem {
+    width: calc(50% - 10px);
+    float: left;
+    padding: 20px 0;
+    border-top: 1px solid #dce9ff;
+}
+.liderItem:nth-child(1),
+.liderItem:nth-child(2) {
+    border-top: none;
+}
+.liderItem:nth-child(2n) {
+    float: right;
+}
+.liderImgWrap {
+    height: 145px;
+    width: 100px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.liderImgWrap img {
+    height: 110px;
+    width: auto;
+}
+.liderImgWrap .bdate {
+    padding: 8px 20px;
+    color: #666666;
+    background: linear-gradient(#fff, #ededed);
+}
+.liderTextWrap {
+    height: 145px;
+    width: calc(100% - 100px - 15px);
+    float: right;
+}
+.liderTextWrap h3 {
+    color: #2954a7;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.liderTextWrap p {
+    color: #222222;
+    font-family: "Noto sans", sans-serif;
+    margin-bottom: 18px;
+}
+.liderTextWrap > a {
+    color: #999999;
 }
