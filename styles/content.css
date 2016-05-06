@@ -1867,3 +1867,72 @@ div.sliderItemWrap {
 .sliderControlsHelp img.owl-item.active {
     border-bottom: 3px solid rgb(214, 36, 36);
 }
+
+.newsWrap .mainBlockForBlog {
+    width: 66%;
+    float: left;
+    border:none;
+}
+.newsWrap .mainNews a {
+    display: inline-block;
+}
+.newsWrap .mainNews img {
+    min-height: 380px;
+    width: 100%;
+}
+.newsWrap .mainNews {
+    height: 380px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.newsWrap .mainNews time {
+    padding: 13px 15px;
+    background: linear-gradient(#fff, #ededed);
+    color: #666666;
+    position: absolute;
+    line-height: 1em;
+    right: 16px;
+    top: 16px;
+}
+.newsWrap .mainNews p {
+    padding: 20px;
+    background-image: url('../images/sliderTextBackground.png');
+    background-size: 100% 100%;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 2.4em;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.newsWrap .zhitomirToday {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 30px;
+}
+.newsWrap .zhitomirToday time {
+    margin-right: 25px;
+}
+.zhitomirToday time {
+    position: relative;
+    top: 3px;
+}
+.newsWrap .zhitomirToday .zhitomirToday-wrapContent {
+    float: right;
+    width: calc(100% - 70px);
+}
+.newsWrap .zhitomirToday .olderNews {
+    margin-top: -5px;
+}
+.newsWrap .zhitomirToday .olderNews h3::after {
+    width: 659px;
+}
+.newsWrap .zhitomirToday .olderNews h3 {
+    margin-bottom: 10px;
+}
+.newsWrap .zhitomirToday-pages {
+    text-align: left;
+}
