@@ -1936,3 +1936,103 @@ div.sliderItemWrap {
 .newsWrap .zhitomirToday-pages {
     text-align: left;
 }
+.newsWrap img {
+    width: 100%;
+}
+.mainNewsCat {
+    margin-bottom: 20px;
+}
+.mainNewsCat .catName {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 16px 17px 60px;
+    width: 50px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    background-image: url("../images/zhLiveVerticalBg.png");
+    background-size: 100% 100%;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-weight: bold;
+    line-height: 0.8em;
+    color: white;
+
+}
+.mainNewsCat .catName span {
+    margin-top: 28px;
+    color: #2954a7;
+    display: inline-block;
+    width: 15px;
+}
+.mainNewsCat .catName span:hover {
+    text-decoration: underline;
+}
+.mainNewsCat .catImg {
+    height: 395px;
+    width: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.mainNewsCat .catImg a {
+    display: inline-block;
+}
+.mainNewsCat .catImg img {
+    height: 395px;
+    width: auto;
+}
+.mainNewsCat .catText {
+    background: #5a73b4;
+    height: 395px;
+    width: 50%;
+    float: right;
+    padding: 48px 28px;
+}
+.mainNewsCat .catText h3 {
+    font-size: 1.9em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.mainNewsCat .catText p {
+    margin-top: 30px;
+    color: #abbded;
+    font-family: "Noto sans", sans-serif;
+}
+.newsWrap .zhitomirToday {
+    margin-top: 0;
+}
+.newsWrap .catItem {
+    padding: 15px;
+    background-color: #f4f8ff;
+    margin-top: 15px;
+}
+
+.newsWrap .catItem .catImg {
+    height: 95px;
+    width: 95px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.newsWrap .catItem .catImg img {
+    width: auto;
+    height: 95px;
+}
+.newsWrap .catItem .catText {
+    width: calc(100% - 95px - 15px);
+    float: right;
+    line-height: 1.6em;
+
+}
+.newsWrap .catItem .catText h3 {
+    color: #2954a7;
+    font-size: 1.11em;
+}
+.newsWrap .catItem .catText p {
+    font-family: "Noto sans", sans-serif;
+    color: #222222;
+}
