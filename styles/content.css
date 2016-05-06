@@ -1516,13 +1516,19 @@ div.sliderItemWrap {
     display: inline-block;
     width: 67%;
 }
+.mainPhotoWrap .red,
 .textBlog .red {
+    font-size: 1.2em;
     font-family: 'Scada', sans-serif;
     border-left: 3px solid #d62424;
     color: #2954a7;
     background: #f4f8ff;
     padding: 19px 15px;
     font-weight: bold;
+}
+.mainPhotoWrap .red {
+    width: 50%;
+    float: right;
 }
 .textBlog > p {
     margin-top: 25px;
@@ -2035,4 +2041,43 @@ div.sliderItemWrap {
 .newsWrap .catItem .catText p {
     font-family: "Noto sans", sans-serif;
     color: #222222;
+}
+.mainPhotoWrap {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+.mainPhotoWrap img {
+    width: 100%;
+}
+.mainPhotoWrap.small {
+    height: auto;
+}
+.mainPhotoWrap.small .smallWrap {
+    width: 220px;
+    height: 176px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.mainPhotoWrap.small img {
+    height: 176px;
+    width: auto;
+}
+.mainPhotoWrap .red {
+    width: calc(100% - 20px - 220px);
+    float: right;
+}
+.textBlog .advice {
+    width: 100%;
+}
+.mainNewsCat.birthdays .catText,
+.mainNewsCat.birthdays .catImg {
+    height: 360px;
+}
+.mainNewsCat.birthdays .catImg {
+    float: right;
+}
+.mainNewsCat.birthdays .catText {
+    float: left;
 }
