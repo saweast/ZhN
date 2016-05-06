@@ -2164,6 +2164,9 @@ div.sliderItemWrap {
 .advices .aboutH {
     background-image: url("../images/adviceBg.png");
 }
+.ques .aboutH {
+    background-image: url("../images/quesBg.png");
+}
 .aboutH h2 {
     font-weight: bold;
     font-size: 2.1em;
@@ -2171,9 +2174,13 @@ div.sliderItemWrap {
     line-height: 1em;
     color: white;
 }
+.ques .textBlog,
 .advices .textBlog,
 .aboutUs .textBlog {
     width: 100%;
+}
+.adviceItem:first-child {
+    margin-top: 20px;
 }
 .adviceItem {
     padding: 23px 30px;
@@ -2211,4 +2218,66 @@ div.sliderItemWrap {
 .adviceItem p {
     color: #222;
     font-family: "Noto sans", sans-serif;
+}
+.quesItem {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f8ff;
+    position: relative;
+    overflow: hidden;
+}
+.quesItem::after {
+    content: "";
+    height: 220px;
+    width: 220px;
+    background-image: url("../images/formButtonSoc.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    right: -30px;
+}
+.quesItem h3 {
+    color: #2954a7;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+.quesItem .answer {
+    /*margin-bottom: 12px;*/
+}
+.quesItem .answer p {
+    color: #222;
+    font-family: "Noto sans", sans-serif;
+}
+.quesItem .answer p a {
+    color: #2954a7;
+}
+.quesItem .answer .answerPercent {
+    height: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.answer:nth-child(2) .answerPercent {
+    background-color: #df2927;
+}
+.answer:nth-child(3) .answerPercent {
+    background-color: #ee5050;
+}
+.answer:nth-child(4) .answerPercent {
+    background-color: #abc8f4;
+}
+.answer:nth-child(5) .answerPercent {
+    background-color: #7599ea;
+}
+.answer:nth-child(6) .answerPercent {
+    background-color: #5f84d6;
+}
+.answer:nth-child(7) .answerPercent {
+    background-color: #3356bb;
+}
+.answer:nth-child(8) .answerPercent {
+    background-color: #3333bb;
+}
+.answer:nth-child(9) .answerPercent {
+    background-color: #6033bb;
 }
