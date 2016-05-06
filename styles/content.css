@@ -2081,3 +2081,78 @@ div.sliderItemWrap {
 .mainNewsCat.birthdays .catText {
     float: left;
 }
+.newsWrap .interview {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.newsWrap .interview .interviewImgWrapper {
+    width: 50%;
+    float: left;
+    height: 375px;
+    overflow: hidden;
+    position: relative;
+}
+.newsWrap .interview .interviewImgWrapper img {
+    height: 375px;
+    width: auto;
+}
+.newsWrap .interview .interviewTextWrapper {
+    background: #5a73b4;
+    height: 375px;
+    padding: 20px;
+    width: 50%;
+    float:right;
+}
+.newsWrap .interview .interviewTextWrapper time {
+    display: inline-block;
+    padding: 12px 15px;
+    color: #666;
+    background: linear-gradient(#ffffff,rgba(255,255,255,.8));
+}
+.newsWrap .interview .interviewTextWrapper h3 {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+.newsWrap .interview .interviewTextWrapper p {
+    font-family: "Noto sans", sans-serif;
+    color: #abbded;
+    font-size: 1em;
+    font-weight: 400;
+}
+.newsWrap .interviewItem {
+    width: calc(100% / 3 - 1.83%);
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+}
+.newsWrap .interviewItem:nth-child(3n) {
+    margin-left: 0;
+}
+.newsWrap .interviewItem .interviewItemImg {
+    height: 210px;
+    width: 100%;
+    overflow: hidden;
+}
+.newsWrap .interviewItem .interviewItemImg a {
+    display: inline-block;
+}
+.newsWrap .interviewItem .interviewItemImg img {
+    height: 210px;
+    width: auto;
+}
+.newsWrap .interviewItem .interviewItemText {
+    background: #f4f8ff;
+    padding: 16px;
+}
+.newsWrap .interviewItem .interviewItemText p {
+    color: #2954a7;
+    font-weight: bold;
+    font-size: 1.2em;
+    background: none;
+    padding: 0;
+}
