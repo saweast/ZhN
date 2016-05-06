@@ -162,10 +162,13 @@
 }
 
 ul.sliderWrap {
-    /*width: 5000px;*/
+    width: 5000px;
     position: relative;
     left: 0;
     transition: .3s;
+}
+.themeSlider .sliderWrap {
+    width: auto;
 }
 .sliderWrap:before,
 .sliderWrap:after {
@@ -1860,4 +1863,7 @@ div.sliderItemWrap {
     left: calc(100% - 20px);
     background-image: url('../images/sliderPrevBlack.png');
     transform: rotate(180deg);
+}
+.sliderControlsHelp img.owl-item.active {
+    border-bottom: 3px solid rgb(214, 36, 36);
 }
