@@ -2339,3 +2339,73 @@ div.sliderItemWrap {
 .liderTextWrap > a {
     color: #999999;
 }
+
+.position-relative {
+    position: relative;
+}
+.liderH {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    color: white;
+}
+.liderPeople {
+    margin-top: 20px;
+}
+.liderPeople__mainImage {
+    float: left;
+    width: 60%;
+    min-height: 489px;
+    overflow: hidden;
+}
+.liderPeople__mainImage img {
+    height: 489px;
+    width: auto;
+    position: relative;
+}
+.liderPeople__info {
+    float: right;
+    width: 40%;
+}
+.liderPeople__info date {
+    display: block;
+    line-height: 1em;
+    font-family: "Noto sans", sans-serif;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background: linear-gradient(#eef4ff, #dce9ff);
+    color: #d62424;
+}
+.liderPeople__name {
+    padding: 15px 20px;
+    color: #222222;
+    font-size: 2.2em;
+}
+.liderPeople__alphabet {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 20px;
+    padding-top: 8px;
+    border-bottom: 2px solid #dce9ff;
+    border-top: 2px solid #dce9ff;
+    margin-bottom: 20px;
+}
+.liderPeople__alphabet li {
+    float: left;
+    width: 12px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+}
+.liderPeople__slider {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+.liderPeople__info .liderPeople__slider div img {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+.liderPeople__info .liderPeople__slider div img:nth-child(2n) {
+    margin-right: 0;
+}
